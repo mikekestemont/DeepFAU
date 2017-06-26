@@ -67,7 +67,7 @@ def main():
         date_probas.append(av_pred_date)
 
     # Task 1: script for clean data (13 cols)
-    labels = [str(i) for i in range(1, 12)]
+    labels = [str(i) for i in range(1, 13)]
     idxs = [list(script_encoder.classes_).index(l) for l in labels]
     with open('../output/task1_clean_script_belonging.txt',
               'w') as f:
@@ -78,7 +78,7 @@ def main():
             f.write('\n')
 
     # Task 3: date for clean data (13 cols)
-    labels = [str(i) for i in range(1, 15)]
+    labels = [str(i) for i in range(1, 16)]
     idxs = [list(date_encoder.classes_).index(l) for l in labels]
     with open('../output/task3_clean_date_belonging.txt',
               'w') as f:
